@@ -8,17 +8,13 @@ public class Q2_soma_maxima {
 		Scanner sc = new Scanner(System.in);
 
 		int a, b, c, total;
-		a = 10;
-		b = 5;
-		c = 7;
+		a = sc.nextInt();
+		b = sc.nextInt();
+		c = sc.nextInt();
 
 		int max = Math.max(Math.max(a + b + c, a * b * c),
-						Math.max(
-								Math.max((a + b) * c, a + (b * c)), 
-								Math.max(a * b + c, a + b * c)
-						)
-				);
-		
+				Math.max(Math.max((a + b) * c, a + (b * c)), Math.max(a * b + c, a + b * c)));
+
 		System.out.println(max);
 
 	}
